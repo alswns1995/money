@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class MyClass {
 
@@ -28,5 +29,21 @@ public class MyClass {
 		m = m + 3000;
 		System.out.println("your money is " + m + "won");
 		return m;
+	}
+	
+	public int coinRandom(int money) {
+		Random rnd = new Random();
+		//System.out.println("Random number? : " + rnd.nextInt(3));
+		int num = rnd.nextInt(3);
+		if(num == 0) {
+			money = money + 1000;
+		}
+		else if (num == 1) {
+			money = money + 2000;
+		}
+		else if (num == 2) {
+			money = money + 3000;
+		}
+		return money;
 	}
 }

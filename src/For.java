@@ -22,9 +22,10 @@ public class For {
 		
 		//클래스 불러오기
 		MyClass mc = new MyClass();
-		m = mc.coin(m);
+		mc.coinRandom(m);
+	/*	m = mc.coin(m);
 		m = mc.coin2(m);
-		m = mc.coin3(m);
+		m = mc.coin3(m); */
 		
 		System.out.println("My money? " + m + "won!!");		
 	}
